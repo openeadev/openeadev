@@ -114,3 +114,13 @@ The homepage is designed around these OpenEA messages:
 - A modern alternative to commercial EA platforms.
 
 The software license is mentioned farther down the page rather than in the hero, as intended.
+
+## GitHub Pages repository paths
+
+This site uses relative local asset and page links so it works in both GitHub Pages modes:
+
+- User site: `https://openeadev.github.io/` from a repository named `openeadev.github.io`
+- Project site: `https://openeadev.github.io/openeadev/` from a repository named `openeadev`
+- Custom domain: `https://openea.dev/`
+
+This avoids broken CSS/JavaScript when previewing the project site before the custom domain is active.
