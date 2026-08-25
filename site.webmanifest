@@ -1,0 +1,9 @@
+{
+  "name": "OpenEA",
+  "short_name": "OpenEA",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0b5ed7",
+  "icons": []
+}
