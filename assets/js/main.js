@@ -27,8 +27,8 @@
   });
 
   // Replace these placeholders when the public repository/demo destinations are known.
-  const githubUrl = '#';
-  const tryUrl = '#try';
+  const githubUrl = 'https://github.com/openeadev/openea-community';
+  const tryUrl = '/try';
   document.querySelectorAll('[data-try-link]').forEach(link => {
     link.setAttribute('href', tryUrl);
   });
