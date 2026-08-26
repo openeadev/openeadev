@@ -394,6 +394,23 @@
                     <div class="credential-box">
 
                         <div class="credential-row">
+                            <span class="credential-label">URL</span>
+                            <span
+                                class="credential-value"
+                                id="demo-url"
+                            >demo.openea.dev</span>
+
+                            <button
+                                type="button"
+                                class="copy-button"
+                                data-copy="demo-url"
+                                aria-label="Copy demo url"
+                            >
+                                Copy
+                            </button>
+                        </div>
+
+                        <div class="credential-row">
                             <span class="credential-label">Username</span>
                             <span
                                 class="credential-value"
@@ -439,7 +456,7 @@
                     <div class="demo-launch">
                         <a
                             class="button button-primary"
-                            href="https://openea-community-demo.onrender.com"
+                            href="https://demo.openea.dev"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -477,52 +494,82 @@
 
     </main>
 
-    <script>
-        (() => {
-            const status = document.getElementById("copy-status");
+<script>
+    (() => {
+        const status = document.getElementById("copy-status");
 
-            document.querySelectorAll("[data-copy]").forEach((button) => {
-                button.addEventListener("click", async () => {
-                    const targetId = button.getAttribute("data-copy");
-                    const target = document.getElementById(targetId);
+        const copyLabels = {
+            "demo-url": "URL",
+            "demo-username": "Username",
+            "demo-password": "Password"
+        };
 
-                    if (!target) {
-                        return;
+        async function copyText(value) {
+            if (navigator.clipboard && window.isSecureContext) {
+                await navigator.clipboard.writeText(value);
+                return;
+            }
+
+            // Fallback for browsers where Clipboard API is unavailable.
+            const textArea = document.createElement("textarea");
+            textArea.value = value;
+            textArea.style.position = "fixed";
+            textArea.style.left = "-9999px";
+            textArea.style.top = "-9999px";
+
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+
+            const successful = document.execCommand("copy");
+
+            document.body.removeChild(textArea);
+
+            if (!successful) {
+                throw new Error("Copy command failed");
+            }
+        }
+
+        document.querySelectorAll("[data-copy]").forEach((button) => {
+            button.addEventListener("click", async () => {
+                const targetId = button.getAttribute("data-copy");
+                const target = document.getElementById(targetId);
+
+                if (!target) {
+                    return;
+                }
+
+                const value = target.textContent.trim();
+                const label = copyLabels[targetId] || "Value";
+                const originalText = button.textContent;
+
+                try {
+                    await copyText(value);
+
+                    button.textContent = "Copied";
+
+                    if (status) {
+                        status.textContent = `${label} copied.`;
                     }
 
-                    const value = target.textContent.trim();
-
-                    try {
-                        await navigator.clipboard.writeText(value);
-
-                        const originalText = button.textContent;
-                        button.textContent = "Copied";
+                    window.setTimeout(() => {
+                        button.textContent = originalText;
 
                         if (status) {
-                            status.textContent =
-                                targetId === "demo-username"
-                                    ? "Username copied."
-                                    : "Password copied.";
+                            status.textContent = "";
                         }
+                    }, 1800);
 
-                        window.setTimeout(() => {
-                            button.textContent = originalText;
-
-                            if (status) {
-                                status.textContent = "";
-                            }
-                        }, 1800);
-
-                    } catch (error) {
-                        if (status) {
-                            status.textContent =
-                                "Unable to copy automatically. Select the value and copy it manually.";
-                        }
+                } catch (error) {
+                    if (status) {
+                        status.textContent =
+                            `Unable to copy ${label.toLowerCase()} automatically. Select it and copy it manually.`;
                     }
-                });
+                }
             });
-        })();
-    </script>
+        });
+    })();
+</script>
 
 </body>
 
