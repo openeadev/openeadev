@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Privacy &amp; Analytics — OpenEA</title>
+  <meta name="description" content="How openea.dev uses optional Google Analytics and how to manage your analytics preference.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://openea.dev/privacy/">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body class="subpage privacy-page">
+  <header class="site-header is-scrolled">
+    <div class="container nav-wrap">
+      <a class="brand" href="../" aria-label="OpenEA home">
+        <img src="../assets/img/openea-mark.svg" width="32" height="32" alt="">
+        <span class="brand-name">OpenEA</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <article class="subpage-card privacy-card">
+        <div class="eyebrow">OpenEA</div>
+        <h1>Privacy &amp; Analytics</h1>
+        <p class="privacy-meta">Last updated: August 26, 2026</p>
+
+        <p>OpenEA uses optional website analytics on <strong>openea.dev</strong> to understand how visitors use the public project website. Analytics is disabled by default. Google Analytics is loaded only after you choose <strong>Allow analytics</strong>.</p>
+
+        <h2>What we use</h2>
+        <p>The site uses Google Analytics 4 with measurement ID <code>G-VBNM5LKVBF</code>. We use analytics to understand page usage and a small set of project interactions, including visits to Try OpenEA, the live demo, GitHub, documentation, downloads, and releases.</p>
+
+        <h2>What happens before consent</h2>
+        <p>OpenEA uses Basic Consent Mode. Until you allow analytics, the Google Analytics tag is not loaded and no Google Analytics data is sent from this site. Advertising storage, advertising user data, and advertising personalization are configured as denied even when analytics is allowed.</p>
+
+        <h2>What may be collected after consent</h2>
+        <p>If you allow analytics, Google Analytics may process information such as pages viewed, approximate location, browser and device characteristics, referring pages, session activity, and interactions with selected links. Google Analytics may set first-party analytics cookies such as <code>_ga</code>.</p>
+        <p>OpenEA also records these custom analytics events when applicable:</p>
+        <ul>
+          <li><code>try_openea</code> — a visitor follows a Try OpenEA link.</li>
+          <li><code>demo_launch</code> — a visitor opens the OpenEA Community demo.</li>
+          <li><code>github_visit</code> — a visitor follows a GitHub link.</li>
+          <li><code>docs_open</code> — a visitor opens documentation.</li>
+          <li><code>download_open</code> — a visitor opens the download area.</li>
+          <li><code>releases_open</code> — a visitor opens release information.</li>
+        </ul>
+
+        <h2>Your preference</h2>
+        <p>Your analytics choice is stored in your browser's local storage under <code>openea.analyticsConsent.v1</code>. This preference is used so the site can remember whether you allowed or declined analytics. If you clear browser site data, the site will ask again.</p>
+        <p>You can change your choice at any time. If you disable analytics after previously allowing it, the site removes the common Google Analytics cookies it can access and reloads with the Google tag blocked.</p>
+
+        <div class="privacy-actions">
+          <button type="button" class="button button-primary" data-consent-settings>Change analytics preference</button>
+          <a class="button button-secondary" href="../">Return to OpenEA</a>
+        </div>
+
+        <h2>Google and GitHub</h2>
+        <p>Google Analytics is provided by Google. You can review <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google's privacy policy</a> for information about Google's data practices. This website is hosted with GitHub Pages, so GitHub may separately process technical connection information as part of providing the hosting service.</p>
+
+        <h2>Scope</h2>
+        <p>This notice describes analytics on <strong>openea.dev</strong>. Links to GitHub, <strong>demo.openea.dev</strong>, and other external services lead to separate services with their own data practices.</p>
+
+        <h2>Questions</h2>
+        <p>Questions about the OpenEA website can be raised through the <a href="https://github.com/openeadev/openea-community" rel="noopener noreferrer">OpenEA Community repository on GitHub</a>.</p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="subpage-footer">
+    <div class="container subpage-footer__links">
+      <a href="../">OpenEA home</a>
+      <button type="button" class="subpage-preference-button" data-consent-settings>Analytics settings</button>
+    </div>
+  </footer>
+
+  <script src="../assets/js/analytics.js" defer></script>
+</body>
+
+</html>

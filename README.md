@@ -394,3 +394,59 @@ Changes related specifically to the `openea.dev` website can be submitted throug
 OpenEA is actively being developed.
 
 The Community platform, documentation, public website, demonstration environment, and future OpenEA capabilities will continue to evolve as the project develops.
+
+---
+
+## Google Analytics and Privacy
+
+The production site uses **Google Analytics 4** with measurement ID:
+
+```text
+G-VBNM5LKVBF
+```
+
+Analytics is implemented in:
+
+```text
+assets/js/analytics.js
+```
+
+The implementation uses **Basic Consent Mode**:
+
+* Google Analytics is blocked until the visitor explicitly allows analytics.
+* No Google Analytics request is sent when a new visitor declines analytics.
+* `analytics_storage` is granted only after opt-in.
+* `ad_storage`, `ad_user_data`, and `ad_personalization` remain denied.
+* The visitor's choice is stored locally as `openea.analyticsConsent.v1`.
+* Visitors can reopen the consent controls through **Analytics settings** links or the `/privacy/` page.
+
+The site records standard GA4 page measurement plus these OpenEA-specific events:
+
+| Event | Meaning |
+| --- | --- |
+| `try_openea` | Visitor follows a Try OpenEA link |
+| `demo_launch` | Visitor launches `demo.openea.dev` |
+| `github_visit` | Visitor follows a GitHub link |
+| `docs_open` | Visitor opens documentation |
+| `download_open` | Visitor opens the download area |
+| `releases_open` | Visitor opens release information |
+
+The privacy notice is published at:
+
+```text
+https://openea.dev/privacy/
+```
+
+### Verify analytics after deployment
+
+1. Deploy the site to GitHub Pages.
+2. Open `https://openea.dev` in a private/incognito window.
+3. Confirm that no request to `googletagmanager.com` is made before consent.
+4. Select **Allow analytics**.
+5. Confirm that `gtag/js?id=G-VBNM5LKVBF` loads.
+6. Open Google Analytics **Reports → Realtime** and confirm the visit appears.
+7. Launch the demo or follow another tracked CTA and confirm the custom event appears in Realtime/DebugView after processing.
+8. Reopen **Analytics settings**, select **Decline**, and confirm the page reloads without loading the Google tag.
+
+If an event should be treated as a primary conversion for the project, mark it as a **key event** in the GA4 property. `demo_launch` is the strongest initial candidate.
+
