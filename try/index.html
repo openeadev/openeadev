@@ -3,29 +3,527 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="robots" content="noindex,follow">
-    <title>OpenEA - Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Primary SEO -->
+    <title>OpenEA Community Demo | Open Source Enterprise Architecture Platform</title>
+
+    <meta
+        name="description"
+        content="Try OpenEA Community, a modern open-source enterprise architecture platform for managing applications, business capabilities, technologies, relationships, lifecycle, impact analysis, findings, portfolios, and roadmaps."
+    >
+
+    <meta
+        name="keywords"
+        content="enterprise architecture, enterprise architecture software, enterprise architecture tool, open source enterprise architecture, EA tool, EA repository, application portfolio management, business capability mapping, technology portfolio, architecture repository, OpenEA"
+    >
+
+    <meta name="robots" content="index,follow">
+    <meta name="author" content="OpenEA">
+
+    <link rel="canonical" href="https://openea.dev/try/">
+
+    <!-- Open Graph / LinkedIn / Teams / Slack -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="OpenEA">
+    <meta property="og:title" content="Try OpenEA Community">
+    <meta
+        property="og:description"
+        content="Explore a live demo of OpenEA Community, a modern open-source enterprise architecture platform."
+    >
+    <meta property="og:url" content="https://openea.dev/try/">
+    <meta property="og:image" content="https://openea.dev/assets/img/openea-social-card.png">
+    <meta property="og:image:alt" content="OpenEA Community - Open Source Enterprise Architecture">
+
+    <!-- X / Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Try OpenEA Community">
+    <meta
+        name="twitter:description"
+        content="Explore the live OpenEA Community enterprise architecture demo."
+    >
+    <meta name="twitter:image" content="https://openea.dev/assets/img/openea-social-card.png">
+
+    <!-- Existing site assets -->
     <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="../assets/css/styles.css">
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "OpenEA Community",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "url": "https://openea.dev/",
+        "description": "OpenEA Community is an open-source enterprise architecture platform for managing architecture objects, relationships, lifecycle, impact analysis, findings, portfolios, and roadmaps.",
+        "license": "https://www.gnu.org/licenses/agpl-3.0.html",
+        "isAccessibleForFree": true
+    }
+    </script>
+
+    <style>
+        .try-page {
+            padding: 5rem 0 6rem;
+        }
+
+        .try-shell {
+            max-width: 980px;
+            margin: 0 auto;
+        }
+
+        .try-hero {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .try-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: .45rem;
+            margin-bottom: 1rem;
+            padding: .4rem .8rem;
+            border-radius: 999px;
+            background: rgba(37, 99, 235, .10);
+            color: #2563eb;
+            font-size: .78rem;
+            font-weight: 700;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+        }
+
+        .try-hero h1 {
+            max-width: 820px;
+            margin: 0 auto 1.25rem;
+            font-size: clamp(2.3rem, 5vw, 4rem);
+            line-height: 1.05;
+            letter-spacing: -.035em;
+        }
+
+        .try-lead {
+            max-width: 760px;
+            margin: 0 auto;
+            font-size: 1.15rem;
+            line-height: 1.75;
+            color: var(--muted, #64748b);
+        }
+
+        .try-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1.15fr) minmax(300px, .85fr);
+            gap: 1.5rem;
+            align-items: stretch;
+        }
+
+        .try-card {
+            padding: 2rem;
+            border: 1px solid rgba(148, 163, 184, .22);
+            border-radius: 18px;
+            background: var(--surface, rgba(255, 255, 255, .03));
+            box-shadow: 0 18px 50px rgba(15, 23, 42, .06);
+        }
+
+        .try-card h2 {
+            margin-top: 0;
+            margin-bottom: .75rem;
+            font-size: 1.35rem;
+        }
+
+        .try-card-intro {
+            margin-top: 0;
+            color: var(--muted, #64748b);
+            line-height: 1.65;
+        }
+
+        .feature-list {
+            display: grid;
+            gap: .85rem;
+            margin: 1.5rem 0 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .feature-list li {
+            display: flex;
+            gap: .75rem;
+            align-items: flex-start;
+            line-height: 1.5;
+        }
+
+        .feature-check {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex: 0 0 auto;
+            width: 1.35rem;
+            height: 1.35rem;
+            margin-top: .05rem;
+            border-radius: 50%;
+            background: rgba(37, 99, 235, .12);
+            color: #2563eb;
+            font-size: .82rem;
+            font-weight: 800;
+        }
+
+        .credential-box {
+            margin-top: 1.4rem;
+            overflow: hidden;
+            border: 1px solid rgba(148, 163, 184, .25);
+            border-radius: 12px;
+        }
+
+        .credential-row {
+            display: grid;
+            grid-template-columns: 95px minmax(0, 1fr) auto;
+            gap: .75rem;
+            align-items: center;
+            padding: .9rem 1rem;
+        }
+
+        .credential-row + .credential-row {
+            border-top: 1px solid rgba(148, 163, 184, .2);
+        }
+
+        .credential-label {
+            color: var(--muted, #64748b);
+            font-size: .82rem;
+            font-weight: 600;
+        }
+
+        .credential-value {
+            min-width: 0;
+            overflow-wrap: anywhere;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            font-size: .9rem;
+            font-weight: 600;
+        }
+
+        .copy-button {
+            appearance: none;
+            padding: .35rem .55rem;
+            border: 1px solid rgba(148, 163, 184, .3);
+            border-radius: 7px;
+            background: transparent;
+            color: inherit;
+            cursor: pointer;
+            font: inherit;
+            font-size: .76rem;
+            font-weight: 600;
+        }
+
+        .copy-button:hover {
+            border-color: #2563eb;
+            color: #2563eb;
+        }
+
+        .demo-launch {
+            margin-top: 1.5rem;
+        }
+
+        .demo-launch .button {
+            width: 100%;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .demo-note {
+            margin: 1rem 0 0;
+            padding: .9rem 1rem;
+            border-radius: 10px;
+            background: rgba(245, 158, 11, .08);
+            color: var(--muted, #64748b);
+            font-size: .84rem;
+            line-height: 1.55;
+        }
+
+        .demo-note strong {
+            color: inherit;
+        }
+
+        .try-secondary {
+            margin-top: 3rem;
+            text-align: center;
+        }
+
+        .try-secondary h2 {
+            margin-bottom: .75rem;
+            font-size: 1.65rem;
+        }
+
+        .try-secondary p {
+            max-width: 760px;
+            margin: 0 auto;
+            color: var(--muted, #64748b);
+            line-height: 1.7;
+        }
+
+        .copy-status {
+            min-height: 1.25rem;
+            margin-top: .75rem;
+            color: #2563eb;
+            font-size: .8rem;
+            text-align: center;
+        }
+
+        @media (max-width: 760px) {
+            .try-page {
+                padding-top: 3rem;
+            }
+
+            .try-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .try-card {
+                padding: 1.4rem;
+            }
+
+            .credential-row {
+                grid-template-columns: 80px minmax(0, 1fr) auto;
+            }
+        }
+    </style>
 </head>
 
 <body class="subpage">
+
     <header class="site-header is-scrolled">
-        <div class="container nav-wrap"><a class="brand" href="../"><span class="brand-mark">O</span><span
-                    class="brand-name">OpenEA</span></a></div>
-    </header>
-    <main>
-        <div class="container" >
-            <div class="subpage-card">
-                <div class="eyebrow">OpenEA</div>
-                <h1>Demo Now Available</h1>
-                <p>UserName: demo</p>
-                <p>Password: openeaadmindemo!</p>
-                <a class="button button-primary" href="https://openea-community-demo.onrender.com">Try now</a>
-            </div>
+        <div class="container nav-wrap">
+        <a class="brand" href="./" aria-label="OpenEA home">
+            <img src="../assets/img/openea-mark.svg" width="32px" height="32px">
+            <span class="brand-name">OpenEA</span>
+        </a>
         </div>
+    </header>
+
+    <main class="try-page">
+
+        <div class="container try-shell">
+
+            <section class="try-hero">
+
+                <div class="try-eyebrow">
+                    OpenEA Community
+                </div>
+
+                <h1>
+                    Explore OpenEA in a Live Demo
+                </h1>
+
+                <p class="try-lead">
+                    Evaluate a modern, open-source enterprise architecture platform
+                    built to connect business capabilities, applications, technologies,
+                    data, initiatives, ownership, lifecycle, and architecture decisions
+                    in one governed repository.
+                </p>
+
+            </section>
+
+            <div class="try-grid">
+
+                <section class="try-card">
+
+                    <h2>See Enterprise Architecture in Context</h2>
+
+                    <p class="try-card-intro">
+                        The demo includes a populated enterprise architecture repository
+                        so you can explore OpenEA without installing anything.
+                    </p>
+
+                    <ul class="feature-list">
+
+                        <li>
+                            <span class="feature-check">✓</span>
+                            <span>
+                                Explore applications, business capabilities, processes,
+                                technologies, data, organizations, and initiatives.
+                            </span>
+                        </li>
+
+                        <li>
+                            <span class="feature-check">✓</span>
+                            <span>
+                                Navigate governed relationships between architecture objects.
+                            </span>
+                        </li>
+
+                        <li>
+                            <span class="feature-check">✓</span>
+                            <span>
+                                Create, edit, and archive architecture records.
+                            </span>
+                        </li>
+
+                        <li>
+                            <span class="feature-check">✓</span>
+                            <span>
+                                Explore impact analysis and architecture dependencies.
+                            </span>
+                        </li>
+
+                        <li>
+                            <span class="feature-check">✓</span>
+                            <span>
+                                Review architecture findings, analytics, portfolios,
+                                and roadmaps.
+                            </span>
+                        </li>
+
+                        <li>
+                            <span class="feature-check">✓</span>
+                            <span>
+                                Experience the same OpenEA Community application
+                                available for self-hosting.
+                            </span>
+                        </li>
+
+                    </ul>
+
+                </section>
+
+                <section class="try-card">
+
+                    <h2>Launch the Demo</h2>
+
+                    <p class="try-card-intro">
+                        Use the credentials below to sign in to the public
+                        OpenEA Community environment.
+                    </p>
+
+                    <div class="credential-box">
+
+                        <div class="credential-row">
+                            <span class="credential-label">Username</span>
+                            <span
+                                class="credential-value"
+                                id="demo-username"
+                            >demo</span>
+
+                            <button
+                                type="button"
+                                class="copy-button"
+                                data-copy="demo-username"
+                                aria-label="Copy demo username"
+                            >
+                                Copy
+                            </button>
+                        </div>
+
+                        <div class="credential-row">
+                            <span class="credential-label">Password</span>
+                            <span
+                                class="credential-value"
+                                id="demo-password"
+                            >openeaadmindemo!</span>
+
+                            <button
+                                type="button"
+                                class="copy-button"
+                                data-copy="demo-password"
+                                aria-label="Copy demo password"
+                            >
+                                Copy
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div
+                        id="copy-status"
+                        class="copy-status"
+                        role="status"
+                        aria-live="polite"
+                    ></div>
+
+                    <div class="demo-launch">
+                        <a
+                            class="button button-primary"
+                            href="https://openea-community-demo.onrender.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Launch OpenEA Community Demo ↗
+                        </a>
+                    </div>
+
+                    <div class="demo-note">
+                        <strong>Demo startup:</strong>
+                        The OpenEA Community demo uses free hosted infrastructure.
+                        If the environment has been inactive, it may take a short
+                        time to wake up when you first open it.
+                    </div>
+
+                </section>
+
+            </div>
+
+            <section class="try-secondary">
+
+                <h2>Open Source Enterprise Architecture</h2>
+
+                <p>
+                    OpenEA Community is designed for organizations and architecture
+                    practitioners looking for an open, self-hosted approach to
+                    enterprise architecture management. The repository is the
+                    authoritative architecture model, while visualizations,
+                    analytics, findings, impact analysis, portfolios, and roadmaps
+                    are derived from that structured information.
+                </p>
+
+            </section>
+
+        </div>
+
     </main>
+
+    <script>
+        (() => {
+            const status = document.getElementById("copy-status");
+
+            document.querySelectorAll("[data-copy]").forEach((button) => {
+                button.addEventListener("click", async () => {
+                    const targetId = button.getAttribute("data-copy");
+                    const target = document.getElementById(targetId);
+
+                    if (!target) {
+                        return;
+                    }
+
+                    const value = target.textContent.trim();
+
+                    try {
+                        await navigator.clipboard.writeText(value);
+
+                        const originalText = button.textContent;
+                        button.textContent = "Copied";
+
+                        if (status) {
+                            status.textContent =
+                                targetId === "demo-username"
+                                    ? "Username copied."
+                                    : "Password copied.";
+                        }
+
+                        window.setTimeout(() => {
+                            button.textContent = originalText;
+
+                            if (status) {
+                                status.textContent = "";
+                            }
+                        }, 1800);
+
+                    } catch (error) {
+                        if (status) {
+                            status.textContent =
+                                "Unable to copy automatically. Select the value and copy it manually.";
+                        }
+                    }
+                });
+            });
+        })();
+    </script>
+
 </body>
 
 </html>
