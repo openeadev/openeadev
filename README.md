@@ -1,93 +1,297 @@
-# OpenEA.dev website
+<div align="center">
 
-Static marketing site for **https://openea.dev**. It is intentionally built with plain HTML, CSS, and JavaScript so it can be hosted directly on GitHub Pages with no framework, package manager, or build step.
+<img src="assets/img/openea-wordmark.svg" alt="OpenEA" width="240">
 
-## Repository structure
+# OpenEA
+
+### Open-source Enterprise Architecture for modern organizations
+
+[![Website](https://img.shields.io/badge/Website-openea.dev-2563eb)](https://openea.dev)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Try_OpenEA-16a34a)](https://demo.openea.dev)
+[![Community](https://img.shields.io/badge/Edition-Community-2563eb)](https://github.com/openeadev/openea-community)
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
+
+**[Website](https://openea.dev)** ·
+**[Try OpenEA](https://openea.dev/try/)** ·
+**[Live Demo](https://demo.openea.dev)** ·
+**[Community Source](https://github.com/openeadev/openea-community)**
+
+</div>
+
+---
+
+## About OpenEA
+
+**OpenEA** is an Enterprise Architecture knowledge and decision-support platform designed to help organizations understand how their business capabilities, applications, technologies, data, initiatives, ownership, and architecture decisions fit together.
+
+OpenEA uses a **repository-first** approach. Architecture objects and their relationships form the authoritative enterprise architecture model. Visualizations, analytics, findings, impact analysis, portfolios, and roadmaps are derived from that structured information.
+
+OpenEA is intended to help architects answer questions such as:
+
+* What business capabilities does this application support?
+* Which applications support a particular business capability?
+* What technologies does an application depend on?
+* Which technologies are approaching end of support?
+* What is affected if an application or technology is retired?
+* Which initiatives are changing the same parts of the architecture?
+* Where are architecture risks and gaps emerging?
+* Which applications lack accountable ownership?
+* Why was a particular architecture or technology decision made?
+
+The goal is not simply to inventory technology. OpenEA connects technology to the business context that explains why it matters.
+
+---
+
+## OpenEA Community
+
+**OpenEA Community** is the open-source edition of OpenEA.
+
+It provides a self-hosted Enterprise Architecture Management platform for organizations, architects, technology teams, and anyone evaluating EA tools.
+
+Community capabilities include:
+
+* Governed enterprise architecture repository
+* Business capability management
+* Business process modeling
+* Application portfolio information
+* Technology portfolio information
+* Data architecture objects
+* Organizations and roles
+* Initiatives and projects
+* Architecture principles
+* Architecture decisions
+* Governed architecture relationships
+* Lifecycle and criticality information
+* Repository search and filtering
+* Architecture impact analysis
+* Deterministic findings and analytics
+* Portfolios
+* Roadmaps
+* Reviews and governance
+* Comments and audit history
+* CSV object import
+* CSV relationship import
+* REST API
+* Personal access tokens
+* Service accounts
+* Declarative custom finding rules
+* Light and dark themes
+
+OpenEA Community is licensed under the **GNU Affero General Public License v3.0 (AGPLv3)**.
+
+### Community Source
+
+https://github.com/openeadev/openea-community
+
+---
+
+## Try OpenEA
+
+A public OpenEA Community demonstration environment is available for anyone who wants to evaluate the platform without installing it.
+
+### Demo
+
+**https://demo.openea.dev**
+
+Demo credentials and additional information are available at:
+
+**https://openea.dev/try/**
+
+The demo contains a populated enterprise architecture repository so you can immediately explore the application rather than starting with an empty environment.
+
+You can:
+
+* Browse architecture objects and relationships
+* Create architecture records
+* Edit existing records
+* Archive records
+* Explore application and technology dependencies
+* Run impact analysis
+* Review architecture findings
+* Explore analytics
+* Examine portfolios and roadmaps
+* Test light and dark themes
+
+The hosted demo uses shared demonstration infrastructure. Data may be reset periodically as new OpenEA Community versions are deployed.
+
+---
+
+## Screenshots
+
+### Architecture Repository
+
+![OpenEA architecture repository](assets/img/screenshots/repository.png)
+
+OpenEA provides a governed repository for managing the objects that make up an organization's enterprise architecture.
+
+### Architecture Findings
+
+![OpenEA architecture findings](assets/img/screenshots/findings.png)
+
+Deterministic findings help identify architecture conditions that deserve attention while preserving an explainable connection to the underlying repository data.
+
+### Blast Radius and Impact Analysis
+
+![OpenEA Blast Radius](assets/img/screenshots/blast-radius.png)
+
+Architecture relationships allow OpenEA to analyze dependencies and help architects understand what may be affected by a proposed change.
+
+---
+
+## Core Principles
+
+### Repository First
+
+Architecture objects and their relationships constitute the authoritative architecture model.
+
+Diagrams, dashboards, portfolios, roadmaps, findings, impact analysis, and other views are derived from that model rather than maintained as disconnected artifacts.
+
+### Business Context Matters
+
+Technology should be connected wherever possible to applications, business capabilities, processes, products, data, ownership, initiatives, and architecture decisions.
+
+OpenEA is intended to explain not only **what technology exists**, but **why it matters to the enterprise**.
+
+### Governed but Extensible
+
+OpenEA provides an opinionated Enterprise Architecture metamodel and governed relationship vocabulary while allowing the platform to evolve as organizational needs grow.
+
+### Explainable Analytics
+
+Architecture findings and analytical outputs should be deterministic and understandable.
+
+Users should be able to determine why a finding or analytical result was produced.
+
+### Preserve History
+
+Architecture evolves over time. OpenEA favors preserving history, archiving records, and superseding decisions rather than silently deleting or overwriting important architectural context.
+
+### Simple Self-Hosting
+
+OpenEA is designed to remain straightforward to deploy and operate.
+
+The platform avoids introducing infrastructure simply because it is common in large enterprise software stacks.
+
+---
+
+## Community and Enterprise
+
+OpenEA is developed in two editions.
+
+### OpenEA Community
+
+The Community edition is the open-source OpenEA distribution:
+
+```text
+openea-community
+```
+
+It provides the core repository, governance, relationship, analysis, findings, portfolio, roadmap, API, and self-hosting capabilities.
+
+### OpenEA Enterprise
+
+OpenEA Enterprise is developed separately from the Community edition and extends the platform with additional capabilities intended for more complex enterprise environments.
+
+The two editions maintain independent release lifecycles. Features are not automatically transferred between editions.
+
+---
+
+## Technology
+
+OpenEA Community uses a deliberately straightforward architecture.
+
+### Backend
+
+* Python
+* FastAPI
+* SQLAlchemy
+* Pydantic
+* Alembic
+* PostgreSQL
+
+### Frontend
+
+* Jinja2
+* HTMX
+* Tabler
+* Lucide
+* Cytoscape.js
+* Focused JavaScript modules
+
+### Deployment
+
+* Docker
+* Docker Compose
+* PostgreSQL
+
+OpenEA uses a server-rendered application architecture rather than requiring a JavaScript SPA or Node.js build environment.
+
+---
+
+# About This Repository
+
+This repository contains the static public website for:
+
+**https://openea.dev**
+
+The website is intentionally built with plain HTML, CSS, and JavaScript so it can be hosted directly on **GitHub Pages** without a framework, package manager, or build process.
+
+It is separate from the OpenEA Community application source code.
+
+---
+
+## Website Structure
 
 ```text
 /
 ├── index.html
 ├── 404.html
 ├── CNAME
-├── .nojekyll
 ├── robots.txt
 ├── sitemap.xml
 ├── site.webmanifest
+│
 ├── assets/
-│   ├── css/styles.css
-│   ├── js/main.js
+│   ├── css/
+│   │   └── styles.css
+│   │
+│   ├── js/
+│   │   └── main.js
+│   │
 │   └── img/
 │       ├── favicon.svg
+│       ├── openea-mark.svg
+│       ├── openea-wordmark.svg
 │       ├── openea-social.png
+│       │
 │       └── screenshots/
+│           ├── repository.png
+│           ├── findings.png
+│           └── blast-radius.png
+│
+├── community/
+│   └── index.html
+│
 ├── docs/
+│   └── index.html
+│
 ├── download/
+│   └── index.html
+│
 ├── releases/
-└── community/
+│   └── index.html
+│
+└── try/
+    └── index.html
 ```
 
-The future-path pages intentionally use `noindex` until they contain real content.
+---
 
-## Before publishing
+## Local Development
 
-### 1. Add the public GitHub and Try OpenEA URLs
+No build tools or dependencies are required.
 
-Edit `assets/js/main.js`:
-
-```js
-const githubUrl = '#';
-const tryUrl = '#try';
-```
-
-Replace `githubUrl` with the final public OpenEA repository URL. When a public demo, download, or preferred getting-started destination exists, replace `tryUrl` with that URL as well.
-
-### 2. Add final OpenEA logo
-
-The site currently uses a temporary blue `O` mark and `assets/img/favicon.svg`. Replace these after the final OpenEA identity is complete.
-
-### 3. Add actual product screenshots
-
-See `assets/img/screenshots/README.md`. The homepage currently displays intentional placeholders instead of fabricated product screenshots.
-
-## GitHub Pages deployment
-
-The simplest deployment is **Deploy from a branch**:
-
-1. Create a repository for the website, such as `openea.dev` or `openea-site`.
-2. Commit these files to the default branch.
-3. Open **Repository Settings → Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Choose the default branch and `/ (root)`.
-6. Save.
-7. Under **Custom domain**, configure `openea.dev`.
-8. Enable **Enforce HTTPS** once GitHub makes the option available.
-
-`.nojekyll` is included so GitHub Pages serves the static files directly without Jekyll processing.
-
-## DNS for openea.dev
-
-For the apex domain, GitHub currently documents these IPv4 `A` records:
-
-```text
-@  A  185.199.108.153
-@  A  185.199.109.153
-@  A  185.199.110.153
-@  A  185.199.111.153
-```
-
-GitHub also recommends configuring `www` when using an apex domain. After you know the GitHub user or organization that owns the Pages repository, configure:
-
-```text
-www  CNAME  USERNAME.github.io
-```
-
-or the corresponding organization Pages hostname.
-
-Do not copy DNS values blindly if GitHub changes its Pages documentation later; verify against GitHub's current custom-domain documentation at deployment time.
-
-## Local preview
-
-From the repository root:
+From the repository root, start a local HTTP server:
 
 ```bash
 python3 -m http.server 8000
@@ -99,28 +303,94 @@ Then open:
 http://localhost:8000
 ```
 
-Do not open `index.html` directly from the filesystem because root-relative asset paths such as `/assets/css/styles.css` are intended to be served over HTTP.
+Using a local HTTP server is recommended rather than opening `index.html` directly because the site is designed to operate as a web application served over HTTP or HTTPS.
 
-## Content direction
+---
 
-The homepage is designed around these OpenEA messages:
+## GitHub Pages Deployment
 
-- Open-source enterprise architecture management.
-- Repository-first architecture.
-- Business context around technology.
-- Deterministic, explainable analytics.
-- Architecture findings, confidence/evidence, and Blast Radius.
-- Self-hosted operation without a mandatory SaaS dependency.
-- A modern alternative to commercial EA platforms.
+The website is hosted using GitHub Pages.
 
-The software license is mentioned farther down the page rather than in the hero, as intended.
+The normal deployment workflow is:
 
-## GitHub Pages repository paths
+```text
+Website change
+      ↓
+Test locally
+      ↓
+Commit
+      ↓
+Push to GitHub
+      ↓
+GitHub Pages deploys
+      ↓
+https://openea.dev
+```
 
-This site uses relative local asset and page links so it works in both GitHub Pages modes:
+The custom OpenEA domain is configured through the repository's:
 
-- User site: `https://openeadev.github.io/` from a repository named `openeadev.github.io`
-- Project site: `https://openeadev.github.io/openeadev/` from a repository named `openeadev`
-- Custom domain: `https://openea.dev/`
+```text
+CNAME
+```
 
-This avoids broken CSS/JavaScript when previewing the project site before the custom domain is active.
+file.
+
+The site requires no server-side application, database, build pipeline, or package installation.
+
+---
+
+## Search and Social Metadata
+
+The site includes assets and metadata intended to support search engines and social sharing.
+
+Relevant files include:
+
+```text
+robots.txt
+sitemap.xml
+site.webmanifest
+assets/img/openea-social.png
+```
+
+Individual public pages should provide appropriate:
+
+* Page titles
+* Meta descriptions
+* Canonical URLs
+* Search-engine indexing directives
+* Open Graph metadata
+* Social preview metadata
+
+Pages that are not intended to appear in search results can use `noindex` until they contain public content.
+
+---
+
+## Contributing
+
+OpenEA is under active development.
+
+For OpenEA Community application issues, feature ideas, bug reports, or code contributions, use the Community repository:
+
+**https://github.com/openeadev/openea-community**
+
+Changes related specifically to the `openea.dev` website can be submitted through this repository.
+
+---
+
+## Project Links
+
+| Resource            | Link                                          |
+| ------------------- | --------------------------------------------- |
+| OpenEA              | https://openea.dev                            |
+| Try OpenEA          | https://openea.dev/try/                       |
+| Live Community Demo | https://demo.openea.dev                       |
+| OpenEA Community    | https://github.com/openeadev/openea-community |
+| OpenEA on GitHub    | https://github.com/openeadev                  |
+
+---
+
+## Project Status
+
+OpenEA is actively being developed.
+
+The Community platform, documentation, public website, demonstration environment, and future OpenEA capabilities will continue to evolve as the project develops.
