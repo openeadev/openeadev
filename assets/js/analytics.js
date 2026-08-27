@@ -108,7 +108,7 @@
 
     if (host === 'demo.openea.dev') return 'demo_launch';
     if (path === '/try') return 'try_openea';
-    if (path === '/docs' || (host === 'github.com' && /\/docs(?:\/|$)/.test(path))) return 'docs_open';
+    if (host === 'docs.openea.dev' || path === '/docs' || (host === 'github.com' && /\/docs(?:\/|$)/.test(path))) return 'docs_open';
     if (path === '/download') return 'download_open';
     if (path === '/releases' || (host === 'github.com' && /\/releases(?:\/|$)/.test(path))) return 'releases_open';
     if (host === 'github.com' || host.endsWith('.github.com')) return 'github_visit';

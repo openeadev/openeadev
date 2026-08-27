@@ -450,3 +450,16 @@ https://openea.dev/privacy/
 
 If an event should be treated as a primary conversion for the project, mark it as a **key event** in the GA4 property. `demo_launch` is the strongest initial candidate.
 
+
+## Documentation site
+
+The public OpenEA documentation is hosted separately at:
+
+`https://docs.openea.dev/`
+
+Documentation links on the marketing site open in a new browser tab/window using
+`target="_blank"` with `rel="noopener noreferrer"`. The legacy `/docs/` path is
+retained as a redirect for old bookmarks and inbound links.
+
+The `docs_open` Google Analytics event recognizes links to `docs.openea.dev`.
+
