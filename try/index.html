@@ -13,17 +13,13 @@
         content="Try OpenEA Community, a modern open-source enterprise architecture platform for managing applications, business capabilities, technologies, relationships, lifecycle, impact analysis, findings, portfolios, and roadmaps."
     >
 
-    <meta
-        name="keywords"
-        content="enterprise architecture, enterprise architecture software, enterprise architecture tool, open source enterprise architecture, EA tool, EA repository, application portfolio management, business capability mapping, technology portfolio, architecture repository, OpenEA"
-    >
-
-    <meta name="robots" content="index,follow">
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
     <meta name="author" content="OpenEA">
 
     <link rel="canonical" href="https://openea.dev/try/">
 
     <!-- Open Graph / LinkedIn / Teams / Slack -->
+    <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="OpenEA">
     <meta property="og:title" content="Try OpenEA Community">
@@ -32,8 +28,11 @@
         content="Explore a live demo of OpenEA Community, a modern open-source enterprise architecture platform."
     >
     <meta property="og:url" content="https://openea.dev/try/">
-    <meta property="og:image" content="https://openea.dev/assets/img/openea-social-card.png">
-    <meta property="og:image:alt" content="OpenEA Community - Open Source Enterprise Architecture">
+    <meta property="og:image" content="https://openea.dev/assets/img/openea-social.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="OpenEA Community — open-source enterprise architecture platform">
 
     <!-- X / Twitter -->
     <meta name="twitter:card" content="summary_large_image">
@@ -42,24 +41,71 @@
         name="twitter:description"
         content="Explore the live OpenEA Community enterprise architecture demo."
     >
-    <meta name="twitter:image" content="https://openea.dev/assets/img/openea-social-card.png">
+    <meta name="twitter:image" content="https://openea.dev/assets/img/openea-social.png">
+    <meta name="twitter:image:alt" content="OpenEA Community — open-source enterprise architecture platform">
 
     <!-- Existing site assets -->
     <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="../assets/img/favicon-32.png" type="image/png" sizes="32x32">
+    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png" sizes="180x180">
+    <link rel="manifest" href="../site.webmanifest">
     <link rel="stylesheet" href="../assets/css/styles.css">
 
     <!-- Structured data -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "OpenEA Community",
-        "applicationCategory": "BusinessApplication",
-        "operatingSystem": "Web",
-        "url": "https://openea.dev/",
-        "description": "OpenEA Community is an open-source enterprise architecture platform for managing architecture objects, relationships, lifecycle, impact analysis, findings, portfolios, and roadmaps.",
-        "license": "https://www.gnu.org/licenses/agpl-3.0.html",
-        "isAccessibleForFree": true
+{
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://openea.dev/try/#webpage",
+          "url": "https://openea.dev/try/",
+          "name": "OpenEA Community Demo | Open Source Enterprise Architecture Platform",
+          "description": "Try OpenEA Community, a free open-source enterprise architecture platform for applications, capabilities, technology, relationships, lifecycle, impact analysis, findings, portfolios, and roadmaps.",
+          "isPartOf": {
+            "@id": "https://openea.dev/#website"
+          },
+          "breadcrumb": {
+            "@id": "https://openea.dev/try/#breadcrumb"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://openea.dev/try/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "OpenEA",
+              "item": "https://openea.dev/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Try OpenEA",
+              "item": "https://openea.dev/try/"
+            }
+          ]
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://openea.dev/try/#software",
+          "name": "OpenEA Community",
+          "applicationCategory": "BusinessApplication",
+          "applicationSubCategory": "Enterprise Architecture Management",
+          "operatingSystem": "Web, Linux, Docker",
+          "url": "https://openea.dev/try/",
+          "description": "OpenEA Community is a free, open-source enterprise architecture platform for managing architecture objects, relationships, lifecycle, impact analysis, findings, portfolios, and roadmaps.",
+          "license": "https://www.gnu.org/licenses/agpl-3.0.html",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "codeRepository": "https://github.com/openeadev/openea-community"
+        }
+      ]
     }
     </script>
 
@@ -291,7 +337,7 @@
     <header class="site-header is-scrolled">
         <div class="container nav-wrap">
         <a class="brand" href="../" aria-label="OpenEA home">
-            <img src="../assets/img/openea-mark.svg" width="32px" height="32px">
+            <img src="../assets/img/openea-mark.svg" width="32" height="32" alt="OpenEA">
             <span class="brand-name">OpenEA</span>
         </a>
         </div>

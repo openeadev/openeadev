@@ -37,6 +37,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 img, svg { display: block; max-width: 100%; }
+img { height: auto; }
 a { color: inherit; }
 button, input, textarea, select { font: inherit; }
 code, pre { font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace; }
@@ -132,19 +133,21 @@ p { margin-top: 0; color: var(--ink-600); }
 .capability-card p { margin-bottom: 0; font-size: 14px; }
 
 .product-section { overflow: hidden; background: radial-gradient(circle at 50% -10%, #154e93 0%, #0c2a50 52%, #081b33 100%); }
+.product-section > .container { width: min(calc(100% - 40px), 1300px); }
 .product-section::before { content: ""; position: absolute; inset: 0; opacity: .12; background-image: linear-gradient(rgba(255,255,255,.12) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.12) 1px, transparent 1px); background-size: 44px 44px; mask-image: linear-gradient(to bottom, #000 0%, transparent 82%); }
 .product-heading { position: relative; z-index: 1; }
 .product-heading h2, .product-heading p { color: #fff; }
 .product-heading p { color: #bfd1e6; }
 .product-heading code { color: #d9eaff; }
-.screenshot-showcase { position: relative; z-index: 1; display: grid; grid-template-columns: 1.28fr .72fr; gap: 22px; align-items: start; }
+.screenshot-showcase { position: relative; z-index: 1; display: grid; grid-template-columns: 1.25fr .75fr; gap: 22px; align-items: start; }
 .screenshot-stack { display: grid; gap: 22px; }
 .screenshot-panel { overflow: hidden; margin: 0; border: 1px solid rgba(189,214,243,.23); border-radius: 18px; background: #f8fbff; box-shadow: 0 35px 90px rgba(0,0,0,.32); }
 .browser-chrome { display: flex; align-items: center; gap: 6px; min-height: 40px; padding: 0 13px; border-bottom: 1px solid var(--line); background: #eef3f8; }
 .browser-chrome span { width: 8px; height: 8px; border-radius: 50%; background: #b8c6d6; }
 .browser-chrome strong { margin-left: 7px; color: var(--ink-600); font-size: 11px; }
-.screenshot-placeholder { min-height: 430px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 30px; text-align: center; background: linear-gradient(135deg, #f9fbfe, #eef4fb); }
-.screenshot-placeholder-small { min-height: 190px; }
+.screenshot-placeholder { display: block; min-height: 0; padding: 0; overflow: hidden; background: #fff; }
+.screenshot-placeholder-small { min-height: 0; }
+.screenshot-placeholder img { width: 100%; height: auto; object-fit: contain; }
 .placeholder-kicker { margin-bottom: 7px; color: var(--blue-700); font-size: 10px; font-weight: 900; letter-spacing: .13em; }
 .placeholder-title { margin-bottom: 8px; color: var(--ink-900); font-weight: 800; }
 .placeholder-path { color: var(--ink-500); font-family: monospace; font-size: 11px; }
@@ -203,10 +206,29 @@ p { margin-top: 0; color: var(--ink-600); }
 .subpage-card { width: min(720px, 100%); margin: 0 auto; padding: 50px; border: 1px solid var(--line); border-radius: 24px; background: #fff; box-shadow: var(--shadow-sm); text-align: center; }
 .subpage-card p { max-width: 560px; margin: 0 auto 25px; }
 
+
+/* SEO / FAQ content */
+.faq-section { background: var(--blue-050); }
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+.faq-card {
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--white);
+  box-shadow: var(--shadow-sm);
+}
+.faq-card h3 { margin-bottom: 10px; }
+.faq-card p { margin-bottom: 0; }
+
 @media (max-width: 1000px) {
   .section { padding: 82px 0; }
   .hero { min-height: auto; padding-top: 130px; }
   .hero-grid, .questions-grid, .comparison-grid, .deploy-grid, .open-source-grid { grid-template-columns: 1fr; gap: 52px; }
+  .faq-grid { grid-template-columns: 1fr; }
   .hero-copy { text-align: center; }
   .hero-lede { margin-inline: auto; }
   .hero-actions, .hero-meta { justify-content: center; }
@@ -248,8 +270,8 @@ p { margin-top: 0; color: var(--ink-600); }
   .question { grid-template-columns: 37px 1fr; padding: 18px; }
   .capability-card { min-height: auto; }
   .capability-number { margin-bottom: 24px; }
-  .screenshot-placeholder { min-height: 290px; }
-  .screenshot-placeholder-small { min-height: 190px; }
+  .screenshot-placeholder-small { min-height: 0; }
+.screenshot-placeholder img { width: 100%; height: auto; object-fit: contain; }
   .deploy-terminal pre { padding: 23px; font-size: 12px; }
   .final-cta-inner { padding: 34px 25px; }
   .final-cta-actions, .final-cta-actions .button { width: 100%; }

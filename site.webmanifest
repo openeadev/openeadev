@@ -1,9 +1,22 @@
 {
-  "name": "OpenEA",
+  "name": "OpenEA \u2014 Enterprise Architecture Platform",
   "short_name": "OpenEA",
-  "start_url": ".",
+  "description": "Open-source, self-hosted enterprise architecture platform.",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#0b5ed7",
-  "icons": []
+  "icons": [
+    {
+      "src": "assets/img/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/img/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }

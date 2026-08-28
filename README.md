@@ -463,3 +463,25 @@ retained as a redirect for old bookmarks and inbound links.
 
 The `docs_open` Google Analytics event recognizes links to `docs.openea.dev`.
 
+
+## SEO and Google Search Console
+
+The site has a homepage-focused technical and content SEO implementation for Google Search and social link discovery.
+
+The deployment and validation checklist is maintained in:
+
+```text
+SEO.md
+```
+
+Key public endpoints:
+
+```text
+https://openea.dev/
+https://openea.dev/robots.txt
+https://openea.dev/sitemap.xml
+https://openea.dev/assets/img/openea-social.png
+```
+
+The site deliberately does not use a `meta keywords` tag. Search terms are expressed in visible page content, headings, descriptions, link text, image text alternatives, and structured data instead.
+

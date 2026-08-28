@@ -4,40 +4,193 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>OpenEA — Open Source Enterprise Architecture Management</title>
+  <title>OpenEA | Open-Source Enterprise Architecture Platform</title>
   <meta name="description"
-    content="OpenEA is a modern, self-hosted, open-source enterprise architecture platform for understanding dependencies, business impact, lifecycle risk, and architecture decisions.">
+    content="OpenEA is open-source, self-hosted enterprise architecture software for mapping applications, capabilities, technology, dependencies, risk, and change.">
+  <meta name="application-name" content="OpenEA">
+  <meta name="author" content="OpenEA">
   <meta name="theme-color" content="#0b5ed7">
-  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
   <link rel="canonical" href="https://openea.dev/">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" sizes="180x180">
   <link rel="manifest" href="site.webmanifest">
   <link rel="stylesheet" href="assets/css/styles.css">
 
+  <!-- Social discovery and rich link previews: LinkedIn/Facebook use Open Graph; X uses twitter:* card metadata. -->
+  <meta property="og:locale" content="en_US">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="OpenEA">
-  <meta property="og:title" content="OpenEA — Open Source Enterprise Architecture Management">
+  <meta property="og:title" content="OpenEA | Open-Source Enterprise Architecture Platform">
   <meta property="og:description"
-    content="Model the enterprise. Understand impact. Make architecture decisions with evidence.">
+    content="Open-source, self-hosted enterprise architecture software for understanding applications, capabilities, technology, dependencies, risk, and change.">
   <meta property="og:url" content="https://openea.dev/">
   <meta property="og:image" content="https://openea.dev/assets/img/openea-social.png">
+  <meta property="og:image:secure_url" content="https://openea.dev/assets/img/openea-social.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="OpenEA — open-source enterprise architecture platform">
+
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="OpenEA — Open Source Enterprise Architecture Management">
-  <meta name="twitter:description" content="A modern, self-hosted, open-source enterprise architecture platform.">
+  <meta name="twitter:title" content="OpenEA | Open-Source Enterprise Architecture Platform">
+  <meta name="twitter:description"
+    content="Open-source, self-hosted enterprise architecture software for understanding applications, capabilities, technology, dependencies, risk, and change.">
   <meta name="twitter:image" content="https://openea.dev/assets/img/openea-social.png">
+  <meta name="twitter:image:alt" content="OpenEA — open-source enterprise architecture platform">
 
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "OpenEA",
-    "url": "https://openea.dev/",
-    "applicationCategory": "BusinessApplication",
-    "operatingSystem": "Linux, Docker",
-    "description": "A modern, self-hosted, open-source enterprise architecture management platform.",
-    "license": "https://www.gnu.org/licenses/agpl-3.0.html",
-    "isAccessibleForFree": true
-  }
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://openea.dev/#organization",
+      "name": "OpenEA",
+      "alternateName": "OpenEA Project",
+      "url": "https://openea.dev/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://openea.dev/assets/img/openea-mark.svg",
+        "contentUrl": "https://openea.dev/assets/img/openea-mark.svg",
+        "caption": "OpenEA"
+      },
+      "sameAs": [
+        "https://github.com/openeadev"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://openea.dev/#website",
+      "url": "https://openea.dev/",
+      "name": "OpenEA",
+      "description": "Open-source, self-hosted enterprise architecture platform.",
+      "inLanguage": "en-US",
+      "publisher": {
+        "@id": "https://openea.dev/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://openea.dev/#webpage",
+      "url": "https://openea.dev/",
+      "name": "OpenEA | Open-Source Enterprise Architecture Platform",
+      "description": "OpenEA is open-source, self-hosted enterprise architecture software for mapping applications, capabilities, technology, dependencies, risk, and change.",
+      "isPartOf": {
+        "@id": "https://openea.dev/#website"
+      },
+      "about": {
+        "@id": "https://openea.dev/#software"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://openea.dev/#social-image"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://openea.dev/#social-image",
+      "url": "https://openea.dev/assets/img/openea-social.png",
+      "contentUrl": "https://openea.dev/assets/img/openea-social.png",
+      "width": 1200,
+      "height": 630,
+      "caption": "OpenEA open enterprise architecture"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://openea.dev/#software",
+      "name": "OpenEA",
+      "url": "https://openea.dev/",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "Enterprise Architecture Management",
+      "operatingSystem": "Linux, Docker",
+      "description": "An open-source, self-hosted enterprise architecture platform for modeling business capabilities, applications, technology, data, relationships, dependencies, lifecycle risk, governance, and architecture change.",
+      "publisher": {
+        "@id": "https://openea.dev/#organization"
+      },
+      "codeRepository": "https://github.com/openeadev/openea-community",
+      "softwareHelp": "https://docs.openea.dev/",
+      "downloadUrl": "https://github.com/openeadev/openea-community/releases",
+      "license": "https://www.gnu.org/licenses/agpl-3.0.html",
+      "offers": {
+        "@type": "Offer",
+        "name": "OpenEA Community",
+        "price": "0",
+        "priceCurrency": "USD",
+        "url": "https://openea.dev/try/"
+      },
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Enterprise architects, solution architects, technology leaders, and organizations managing enterprise architecture"
+      },
+      "featureList": [
+        "Enterprise architecture repository",
+        "Application and business capability modeling",
+        "Relationship and dependency modeling",
+        "Architecture impact and blast radius analysis",
+        "Architecture findings and explainable rules",
+        "Confidence and evidence tracking",
+        "Governance and history",
+        "Self-hosted Docker deployment"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://openea.dev/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is OpenEA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "OpenEA is an open-source, self-hosted enterprise architecture platform that connects business capabilities, applications, technology, data, initiatives, ownership, and architecture decisions in a governed repository."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is OpenEA free enterprise architecture software?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "OpenEA Community is free and open source under the GNU Affero General Public License v3.0 (AGPLv3). It can be evaluated through the OpenEA Community demo and source repository."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can OpenEA be self-hosted?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. OpenEA is designed for self-hosting. The Community deployment uses a conventional Python and PostgreSQL stack with Docker Compose as the official deployment path."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is OpenEA an alternative to LeanIX, Alfabet, Ardoq, or Essential?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "OpenEA is designed for organizations evaluating an open-source or self-hosted enterprise architecture platform. It offers a repository-first operating model that can be evaluated alongside commercial and open-source products such as SAP LeanIX, Alfabet, Ardoq, and Essential. Product capabilities and requirements differ, so organizations should evaluate fit for their needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What can enterprise architects model in OpenEA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "OpenEA can model business capabilities, processes, products, organizations, applications, application services, data objects, technologies, initiatives, architecture principles, architecture decisions, and governed relationships between them."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does OpenEA require a SaaS service?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No external SaaS service is required for the core OpenEA Community platform. Organizations can run the platform and keep architecture data on infrastructure they control."
+          }
+        }
+      ]
+    }
+  ]
+}
   </script>
 </head>
 
@@ -47,7 +200,7 @@
   <header class="site-header" data-header>
     <div class="container nav-wrap">
       <a class="brand" href="./" aria-label="OpenEA home">
-        <img src="assets/img/openea-mark.svg" width="32px" height="32px">
+        <img src="assets/img/openea-mark.svg" width="32" height="32" alt="OpenEA">
         <span class="brand-name">OpenEA</span>
       </a>
 
@@ -62,8 +215,8 @@
         <a href="#product">Product</a>
         <a href="#self-hosted">Self-hosted</a>
         <a href="https://docs.openea.dev/" target="_blank" rel="noopener noreferrer">Docs</a>
-        <a class="nav-github" href="#" data-github-link>GitHub</a>
-        <a class="button button-small button-primary" href="/try" data-try-link>Try OpenEA</a>
+        <a class="nav-github" href="https://github.com/openeadev/openea-community" data-github-link>GitHub</a>
+        <a class="button button-small button-primary" href="/try/" data-try-link>Try OpenEA</a>
       </nav>
     </div>
   </header>
@@ -74,20 +227,18 @@
       <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
       <div class="container hero-grid">
         <div class="hero-copy">
-          <div class="eyebrow">Open-source enterprise architecture</div>
+          <div class="eyebrow">OpenEA enterprise architecture platform</div>
           <h1>Understand the architecture.<br><span>Explain the impact.</span></h1>
-          <p class="hero-lede">OpenEA turns enterprise architecture data into decision support. Connect business
-            capabilities, applications, technology, data, initiatives, and decisions—then see what matters when
-            architecture changes.</p>
+          <p class="hero-lede">OpenEA is enterprise architecture software built to turn architecture data into decision support. Connect business capabilities, applications, technology, data, initiatives, and decisions—then understand dependencies, business impact, lifecycle risk, and change.</p>
           <div class="hero-actions">
-            <a class="button button-primary button-large" href="/try" data-try-link>Try OpenEA <span
+            <a class="button button-primary button-large" href="/try/" data-try-link>Try OpenEA <span
                 aria-hidden="true">→</span></a>
-            <a class="button button-secondary button-large" href="#" data-github-link>View on GitHub</a>
+            <a class="button button-secondary button-large" href="https://github.com/openeadev/openea-community" data-github-link>View on GitHub</a>
           </div>
           <div class="hero-meta" aria-label="OpenEA highlights">
             <span>Self-hosted</span>
-            <span>Repository-first</span>
-            <span>Explainable analytics</span>
+            <span>Open-source</span>
+            <span>Free Community edition</span>
           </div>
         </div>
 
@@ -291,7 +442,7 @@
               <!-- <div class="placeholder-kicker">PRODUCT SCREENSHOT</div>
               <div class="placeholder-title">Architecture repository / object detail</div>
               <div class="placeholder-path">assets/img/screenshots/repository.png</div> -->
-              <img src="assets/img/screenshots/repository.png">
+              <img src="assets/img/screenshots/repository.png" width="1481" height="935" alt="OpenEA enterprise architecture repository showing governed architecture records">
             </div>
             <figcaption>Navigate architecture objects, relationships, ownership, lifecycle, and governance context from
               one repository.</figcaption>
@@ -304,7 +455,7 @@
                 <!-- <div class="placeholder-kicker">PRODUCT SCREENSHOT</div>
                 <div class="placeholder-title">Blast Radius analysis</div>
                 <div class="placeholder-path">assets/img/screenshots/blast-radius.png</div> -->
-                <img src="assets/img/screenshots/blast-radius.png">
+                <img src="assets/img/screenshots/blast-radius.png" width="1487" height="835" alt="OpenEA blast radius analysis showing enterprise architecture dependencies and impact">
               </div>
               <figcaption>Explain which dependencies and business objects materially drive impact.</figcaption>
             </figure>
@@ -314,7 +465,7 @@
                 <!-- <div class="placeholder-kicker">PRODUCT SCREENSHOT</div>
                 <div class="placeholder-title">Architecture findings</div>
                 <div class="placeholder-path">assets/img/screenshots/findings.png</div> -->
-                <img src="assets/img/screenshots/findings.png">
+                <img src="assets/img/screenshots/findings.png" width="1485" height="931" alt="OpenEA architecture findings view showing governed and explainable findings">
               </div>
               <figcaption>Turn repository conditions into governed, actionable architecture findings.</figcaption>
             </figure>
@@ -327,9 +478,8 @@
       <div class="container comparison-grid">
         <div class="section-heading">
           <div class="eyebrow">A different model</div>
-          <h2>Modern EA without the commercial platform dependency.</h2>
-          <p>OpenEA is being built as a practical, self-hosted, open-source alternative to platforms such as SAP LeanIX,
-            Software AG Alfabet, Ardoq, and Essential.</p>
+          <h2>An open-source, self-hosted alternative for enterprise architecture teams.</h2>
+          <p>If your organization is evaluating alternatives to SAP LeanIX, Alfabet, Ardoq, or Essential, OpenEA offers a different operating model: repository-first, open source, and designed to run on infrastructure you control.</p>
         </div>
         <div class="comparison-card">
           <div class="comparison-row"><span class="check" aria-hidden="true">✓</span>
@@ -395,7 +545,7 @@
         </div>
         <div class="section-heading">
           <div class="eyebrow">Straightforward self-hosting</div>
-          <h2>Built to run without an infrastructure department of its own.</h2>
+          <h2>Self-hosted enterprise architecture without an infrastructure department of its own.</h2>
           <p>OpenEA uses a conventional Python and PostgreSQL stack with Docker Compose as the official deployment path.
             The architecture intentionally avoids requiring a JavaScript SPA, graph database, search cluster, message
             broker, or external SaaS service for the core experience.</p>
@@ -414,10 +564,55 @@
           <h2>Architecture tooling should be inspectable, adaptable, and yours to run.</h2>
         </div>
         <div class="open-source-copy">
-          <p>OpenEA is licensed under the GNU Affero General Public License v3.0 (AGPLv3). The project is intended to
-            make serious enterprise architecture management accessible without requiring a proprietary EA platform.</p>
-          <a class="button button-light" href="#" data-github-link>Explore the project on GitHub <span
+          <p>OpenEA Community is free and open source under the GNU Affero General Public License v3.0 (AGPLv3). It is intended to make serious enterprise architecture management accessible without requiring a proprietary EA platform or an externally hosted SaaS service.</p>
+          <a class="button button-light" href="https://github.com/openeadev/openea-community" data-github-link>Explore the project on GitHub <span
               aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="faq" class="section section-white faq-section">
+      <div class="container">
+        <div class="section-heading centered">
+          <div class="eyebrow">Enterprise architecture FAQ</div>
+          <h2>Questions about OpenEA and open-source enterprise architecture.</h2>
+          <p>OpenEA is designed for architects and technology leaders who want enterprise architecture management that is
+            repository-first, explainable, self-hosted, and open to inspection.</p>
+        </div>
+        <div class="faq-grid">
+          <article class="faq-card">
+            <h3>What is OpenEA?</h3>
+            <p>OpenEA is an open-source, self-hosted enterprise architecture platform that connects business capabilities,
+              applications, technology, data, initiatives, ownership, and architecture decisions in a governed repository.</p>
+          </article>
+          <article class="faq-card">
+            <h3>Is OpenEA free enterprise architecture software?</h3>
+            <p>OpenEA Community is free and open source under the GNU Affero General Public License v3.0 (AGPLv3). You can
+              evaluate the Community edition through the demo and source repository.</p>
+          </article>
+          <article class="faq-card">
+            <h3>Can OpenEA be self-hosted?</h3>
+            <p>Yes. OpenEA is designed for self-hosting. The Community deployment uses a conventional Python and PostgreSQL
+              stack with Docker Compose as the official deployment path.</p>
+          </article>
+          <article class="faq-card">
+            <h3>Is OpenEA an alternative to LeanIX, Alfabet, Ardoq, or Essential?</h3>
+            <p>OpenEA can be evaluated by organizations looking for an open-source or self-hosted enterprise architecture
+              platform. Its repository-first operating model is different from commercial and open-source alternatives, so
+              organizations should evaluate each product against their own requirements.</p>
+          </article>
+          <article class="faq-card">
+            <h3>What can enterprise architects model in OpenEA?</h3>
+            <p>OpenEA can model business capabilities, processes, products, organizations, applications, application services,
+              data objects, technologies, initiatives, architecture principles, architecture decisions, and governed
+              relationships between them.</p>
+          </article>
+          <article class="faq-card">
+            <h3>Does OpenEA require a SaaS service?</h3>
+            <p>No external SaaS service is required for the core OpenEA Community platform. Organizations can run the platform
+              and keep architecture data on infrastructure they control.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -430,7 +625,7 @@
           <p>Try OpenEA, inspect the source, and follow the project as the platform continues to evolve.</p>
         </div>
         <div class="final-cta-actions">
-          <a class="button button-primary button-large" href="/try" data-try-link>Try OpenEA <span
+          <a class="button button-primary button-large" href="/try/" data-try-link>Try OpenEA <span
               aria-hidden="true">→</span></a>
           <a class="button button-secondary button-large" href="https://docs.openea.dev/" target="_blank" rel="noopener noreferrer">Read the docs</a>
         </div>
@@ -442,13 +637,13 @@
     <div class="container footer-grid">
       <div class="footer-brand">
         <a class="brand brand-footer" href="/" aria-label="OpenEA home">
-          <img src="assets/img/openea-mark.svg" width="32px" height="32px">
+          <img src="assets/img/openea-mark.svg" width="32" height="32" alt="OpenEA">
           <span class="brand-name">OpenEA</span>
         </a>
-        <p>Open enterprise architecture management.</p>
+        <p>Open-source, self-hosted enterprise architecture management.</p>
       </div>
       <div class="footer-links">
-        <div><strong>Project</strong><a href="#" data-github-link>GitHub</a><a href="https://github.com/openeadev/openea-community/releases">Releases</a><a
+        <div><strong>Project</strong><a href="https://github.com/openeadev/openea-community" data-github-link>GitHub</a><a href="https://github.com/openeadev/openea-community/releases">Releases</a><a
             href="download/">Download</a></div>
         <div><strong>Resources</strong><a href="https://docs.openea.dev/" target="_blank" rel="noopener noreferrer">Documentation</a><a href="community/">Community</a><a href="privacy/">Privacy</a><button type="button" class="footer-preference-button" data-consent-settings>Analytics settings</button><a
             href="https://www.gnu.org/licenses/agpl-3.0.html" rel="noopener">AGPLv3</a></div>
