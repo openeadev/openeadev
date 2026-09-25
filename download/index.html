@@ -1,38 +1,425 @@
 <!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="robots" content="noindex,follow">
-    <title>Download OpenEA — OpenEA</title>
-    <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="../assets/css/styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Download OpenEA Community | Free Open-Source Enterprise Architecture</title>
+  <meta name="description"
+    content="Download OpenEA Community, the free open-source and self-hosted enterprise architecture platform. Get the source, installation guide, documentation, and public demo.">
+  <meta name="application-name" content="OpenEA">
+  <meta name="author" content="OpenEA">
+  <meta name="theme-color" content="#0b5ed7">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <link rel="canonical" href="https://openea.dev/download/">
+
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../assets/img/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png" sizes="180x180">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/download.css">
+
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="OpenEA">
+  <meta property="og:title" content="Download OpenEA Community">
+  <meta property="og:description"
+    content="Get the free, open-source OpenEA Community enterprise architecture platform, installation guide, documentation, and demo.">
+  <meta property="og:url" content="https://openea.dev/download/">
+  <meta property="og:image" content="https://openea.dev/assets/img/openea-social.png">
+  <meta property="og:image:secure_url" content="https://openea.dev/assets/img/openea-social.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="OpenEA — open-source enterprise architecture platform">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Download OpenEA Community">
+  <meta name="twitter:description"
+    content="Get the free, open-source OpenEA Community enterprise architecture platform, installation guide, documentation, and demo.">
+  <meta name="twitter:image" content="https://openea.dev/assets/img/openea-social.png">
+  <meta name="twitter:image:alt" content="OpenEA — open-source enterprise architecture platform">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://openea.dev/download/#webpage",
+        "url": "https://openea.dev/download/",
+        "name": "Download OpenEA Community | Free Open-Source Enterprise Architecture",
+        "description": "Download OpenEA Community, the free open-source and self-hosted enterprise architecture platform.",
+        "isPartOf": {
+          "@id": "https://openea.dev/#website"
+        },
+        "about": {
+          "@id": "https://openea.dev/#software"
+        },
+        "breadcrumb": {
+          "@id": "https://openea.dev/download/#breadcrumb"
+        },
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://openea.dev/download/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "OpenEA",
+            "item": "https://openea.dev/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Download OpenEA Community",
+            "item": "https://openea.dev/download/"
+          }
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://openea.dev/#software",
+        "name": "OpenEA",
+        "alternateName": "OpenEA Community",
+        "applicationCategory": "BusinessApplication",
+        "applicationSubCategory": "Enterprise Architecture Management",
+        "operatingSystem": "Linux, Docker",
+        "url": "https://openea.dev/",
+        "downloadUrl": "https://github.com/openeadev/openea-community/releases",
+        "codeRepository": "https://github.com/openeadev/openea-community",
+        "softwareHelp": "https://docs.openea.dev/",
+        "license": "https://www.gnu.org/licenses/agpl-3.0.html",
+        "description": "A free, open-source, self-hosted enterprise architecture platform for modeling capabilities, applications, technology, data, relationships, lifecycle, governance, findings, and architecture change.",
+        "offers": {
+          "@type": "Offer",
+          "name": "OpenEA Community",
+          "price": "0",
+          "priceCurrency": "USD",
+          "url": "https://openea.dev/download/"
+        },
+        "featureList": [
+          "Enterprise architecture repository",
+          "Relationship and dependency modeling",
+          "Impact and blast radius analysis",
+          "Architecture findings and analytics",
+          "Governance and review workflows",
+          "Portfolios and roadmaps",
+          "Self-hosted Docker Compose deployment"
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
+<body class="download-page">
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<body class="subpage">
-    <header class="site-header is-scrolled">
-        <div class="container nav-wrap"><a class="brand" href="../"><span class="brand-mark">O</span><span
-                    class="brand-name">OpenEA</span></a></div>
-    </header>
-    <main>
-        <div class="container">
-            <div class="subpage-card">
-                <div class="eyebrow">OpenEA</div>
-                <h1>Download OpenEA</h1>
-                <p>Release downloads and installation options will be published here once the public repository link is
-                    finalized.</p><a class="button button-primary" href="../">Back to OpenEA</a>
+  <header class="site-header is-scrolled" data-header>
+    <div class="container nav-wrap">
+      <a class="brand" href="../" aria-label="OpenEA home">
+        <img src="../assets/img/openea-mark.svg" width="32" height="32" alt="OpenEA">
+        <span class="brand-name">OpenEA</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-nav-toggle>
+        <span class="sr-only">Toggle navigation</span>
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation" data-nav>
+        <a href="../#why">Why OpenEA</a>
+        <a href="../#features">Features</a>
+        <a href="../#product">Product</a>
+        <a href="../#self-hosted">Self-hosted</a>
+        <a href="https://docs.openea.dev/" target="_blank" rel="noopener noreferrer">Docs</a>
+        <a class="nav-github" href="https://github.com/openeadev/openea-community" data-github-link>GitHub</a>
+        <a class="button button-small button-primary" href="../try/" data-try-link>Try OpenEA</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="download-hero">
+      <div class="download-grid-overlay" aria-hidden="true"></div>
+      <div class="container download-hero-grid">
+        <div class="download-hero-copy">
+          <div class="download-kicker">
+            <span class="download-kicker-dot" aria-hidden="true"></span>
+            OpenEA Community
+          </div>
+          <h1>Download <span>OpenEA Community</span></h1>
+          <p class="download-tagline">Open-source enterprise architecture. Yours to run.</p>
+          <p class="download-lede">
+            Free, self-hosted enterprise architecture software for teams that want control of
+            their architecture repository, their data, and the infrastructure it runs on.
+          </p>
+          <div class="download-actions">
+            <a class="button button-primary button-large"
+               href="https://github.com/openeadev/openea-community"
+               data-github-link>
+              Get OpenEA on GitHub <span aria-hidden="true">↗</span>
+            </a>
+            <a class="button download-button-ghost button-large"
+               href="https://docs.openea.dev/getting-started/installation/"
+               target="_blank" rel="noopener noreferrer">
+              Installation guide <span aria-hidden="true">→</span>
+            </a>
+          </div>
+          <div class="download-meta" aria-label="OpenEA Community highlights">
+            <span>Free &amp; open source</span>
+            <span>Self-hosted</span>
+            <span>AGPLv3</span>
+            <span>Docker Compose</span>
+          </div>
+        </div>
+
+        <div class="download-install-card" aria-label="OpenEA Community installation overview">
+          <div class="download-install-card__top">
+            <div class="terminal-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+            <span>OpenEA Community</span>
+            <span class="ready-pill">Self-hosted</span>
+          </div>
+          <div class="download-terminal">
+            <div><span class="prompt">$</span> git clone https://github.com/openeadev/openea-community.git</div>
+            <div><span class="prompt">$</span> cd openea-community</div>
+            <div><span class="prompt">$</span> docker compose up -d</div>
+          </div>
+          <div class="download-stack">
+            <div class="download-stack-node">
+              <span class="stack-icon" aria-hidden="true">◇</span>
+              <div><strong>OpenEA</strong><small>Enterprise architecture application</small></div>
+              <span class="stack-status">running</span>
             </div>
+            <div class="stack-connector" aria-hidden="true"></div>
+            <div class="download-stack-node">
+              <span class="stack-icon" aria-hidden="true">▱</span>
+              <div><strong>PostgreSQL</strong><small>Architecture repository</small></div>
+              <span class="stack-status">healthy</span>
+            </div>
+          </div>
+          <div class="download-install-note">
+            <span class="note-check" aria-hidden="true">✓</span>
+            <span>Connected, offline, and air-gapped installation paths are documented.</span>
+          </div>
         </div>
-    </main>
+      </div>
+    </section>
 
-    <footer class="subpage-footer">
-        <div class="container subpage-footer__links">
-            <a href="../privacy/">Privacy &amp; analytics</a>
-            <button type="button" class="subpage-preference-button" data-consent-settings>Analytics settings</button>
+    <section class="download-trust" aria-label="OpenEA Community product characteristics">
+      <div class="container download-trust-grid">
+        <div><strong>Free</strong><span>No Community license fee</span></div>
+        <div><strong>Open source</strong><span>GNU AGPLv3</span></div>
+        <div><strong>Self-hosted</strong><span>Your infrastructure</span></div>
+        <div><strong>Portable</strong><span>Docker Compose + PostgreSQL</span></div>
+        <div><strong>Offline capable</strong><span>No SaaS required for core use</span></div>
+      </div>
+    </section>
+
+    <section class="section download-start-section">
+      <div class="container">
+        <div class="section-heading centered">
+          <div class="eyebrow">Get started</div>
+          <h2>Three ways to start with OpenEA.</h2>
+          <p>Go directly to the source, follow the installation path, or evaluate the platform first in the public demo.</p>
         </div>
-    </footer>
+
+        <div class="download-path-grid">
+          <article class="download-path-card">
+            <div class="path-number">01</div>
+            <div class="path-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="presentation">
+                <path d="M8 9 4 12l4 3M16 9l4 3-4 3M14 5l-4 14"/>
+              </svg>
+            </div>
+            <h3>Get the source</h3>
+            <p>Clone the public OpenEA Community repository, review the code, or contribute to the project.</p>
+            <a class="download-card-link"
+               href="https://github.com/openeadev/openea-community"
+               data-github-link>
+              Open GitHub <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="download-path-card featured">
+            <div class="path-number">02</div>
+            <div class="path-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="presentation">
+                <rect x="3" y="4" width="18" height="16" rx="2"/>
+                <path d="m7 9 3 3-3 3M12 16h5"/>
+              </svg>
+            </div>
+            <h3>Install OpenEA</h3>
+            <p>Deploy with Docker Compose and PostgreSQL using the supported self-hosted installation path.</p>
+            <a class="download-card-link"
+               href="https://docs.openea.dev/getting-started/installation/"
+               target="_blank" rel="noopener noreferrer">
+              Read the install guide <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <article class="download-path-card">
+            <div class="path-number">03</div>
+            <div class="path-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="presentation">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="m10 8 6 4-6 4Z"/>
+              </svg>
+            </div>
+            <h3>Explore the demo</h3>
+            <p>Use a populated architecture repository to evaluate the product before installing anything.</p>
+            <a class="download-card-link" href="../try/" data-try-link>
+              Try OpenEA <span aria-hidden="true">→</span>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section download-product-section">
+      <div class="container download-product-grid">
+        <div class="download-product-copy">
+          <div class="eyebrow eyebrow-light">What you get</div>
+          <h2>A real enterprise architecture platform—not just a download.</h2>
+          <p>
+            OpenEA Community turns architecture records and governed relationships into a connected model
+            for understanding dependencies, business impact, risk, governance, and change.
+          </p>
+          <div class="download-capability-list">
+            <div><span>01</span><strong>Repository</strong><small>Applications, capabilities, technology, data, organizations and more.</small></div>
+            <div><span>02</span><strong>Impact Analysis</strong><small>Trace dependencies and understand architectural blast radius.</small></div>
+            <div><span>03</span><strong>Findings &amp; Analytics</strong><small>Use deterministic, explainable rules and metrics.</small></div>
+            <div><span>04</span><strong>Governance</strong><small>Reviews, decisions, ownership, lifecycle and audit history.</small></div>
+            <div><span>05</span><strong>Portfolios &amp; Roadmaps</strong><small>See architecture through operational and change perspectives.</small></div>
+            <div><span>06</span><strong>REST API</strong><small>Integrate with governed application and service-account access.</small></div>
+          </div>
+        </div>
+
+        <figure class="download-product-shot">
+          <div class="browser-chrome">
+            <span></span><span></span><span></span><strong>OpenEA architecture repository</strong>
+          </div>
+          <img src="../assets/img/screenshots/repository.png"
+               width="1481" height="935"
+               loading="lazy"
+               alt="OpenEA Community enterprise architecture repository showing governed architecture records">
+          <figcaption>
+            Repository-first enterprise architecture with governed objects, relationships, ownership, lifecycle, and analysis.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section download-hosting-section">
+      <div class="container download-hosting-grid">
+        <div class="section-heading">
+          <div class="eyebrow">Built for self-hosting</div>
+          <h2>Keep the platform and architecture data under your control.</h2>
+          <p>
+            OpenEA Community uses a conventional Python and PostgreSQL architecture with Docker Compose
+            as the supported deployment path. The core platform does not require an externally hosted SaaS service.
+          </p>
+          <div class="tech-pills" aria-label="OpenEA Community technology stack">
+            <span>Python</span>
+            <span>FastAPI</span>
+            <span>PostgreSQL</span>
+            <span>SQLAlchemy</span>
+            <span>Jinja2</span>
+            <span>HTMX</span>
+            <span>Docker Compose</span>
+          </div>
+          <p class="download-offline-copy">
+            Need an isolated deployment? OpenEA also documents offline and fully air-gapped installation workflows.
+          </p>
+          <a class="text-link"
+             href="https://docs.openea.dev/getting-started/offline-installation/"
+             target="_blank" rel="noopener noreferrer">
+            Read the offline installation guide <span aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <div class="hosting-diagram" aria-label="OpenEA self-hosted architecture">
+          <div class="hosting-label">YOUR INFRASTRUCTURE</div>
+          <div class="hosting-row">
+            <div class="hosting-box hosting-box-primary">
+              <span class="hosting-box-kicker">APPLICATION</span>
+              <strong>OpenEA Community</strong>
+              <small>FastAPI · Jinja2 · HTMX</small>
+            </div>
+            <span class="hosting-arrow" aria-hidden="true">→</span>
+            <div class="hosting-box">
+              <span class="hosting-box-kicker">DATABASE</span>
+              <strong>PostgreSQL</strong>
+              <small>Architecture repository</small>
+            </div>
+          </div>
+          <div class="hosting-divider"></div>
+          <div class="hosting-row hosting-row-secondary">
+            <div><strong>Docker Compose</strong><span>Deployment</span></div>
+            <div><strong>Your network</strong><span>Access control</span></div>
+            <div><strong>Your storage</strong><span>Backups</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section download-final-section">
+      <div class="container">
+        <div class="download-final-card">
+          <div>
+            <div class="eyebrow eyebrow-light">OpenEA Community</div>
+            <h2>Ready to run your own architecture platform?</h2>
+            <p>Get the source now, or explore the public demo before you install.</p>
+          </div>
+          <div class="download-final-actions">
+            <a class="button button-light button-large"
+               href="https://github.com/openeadev/openea-community"
+               data-github-link>
+              Get OpenEA <span aria-hidden="true">↗</span>
+            </a>
+            <a class="button download-button-dark-ghost button-large" href="../try/" data-try-link>
+              Try the demo
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand brand-footer" href="../" aria-label="OpenEA home">
+          <img src="../assets/img/openea-mark.svg" width="32" height="32" alt="OpenEA">
+          <span class="brand-name">OpenEA</span>
+        </a>
+        <p>Open-source, self-hosted enterprise architecture management.</p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <strong>Project</strong>
+          <a href="https://github.com/openeadev/openea-community" data-github-link>GitHub</a>
+          <a href="https://github.com/openeadev/openea-community/releases">Releases</a>
+          <a href="./">Download</a>
+        </div>
+        <div>
+          <strong>Resources</strong>
+          <a href="https://docs.openea.dev/" target="_blank" rel="noopener noreferrer">Documentation</a>
+          <a href="../community/">Community</a>
+          <a href="../privacy/">Privacy</a>
+          <button type="button" class="footer-preference-button" data-consent-settings>Analytics settings</button>
+          <a href="https://www.gnu.org/licenses/agpl-3.0.html" rel="noopener">AGPLv3</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year></span> OpenEA.</span>
+      <span>Built for an open architecture community.</span>
+    </div>
+  </footer>
+
   <script src="../assets/js/analytics.js" defer></script>
+  <script src="../assets/js/main.js" defer></script>
 </body>
-
 </html>

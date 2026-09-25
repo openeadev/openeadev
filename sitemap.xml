@@ -4,7 +4,7 @@
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://openea.dev/</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <image:image>
       <image:loc>https://openea.dev/assets/img/screenshots/repository.png</image:loc>
       <image:title>OpenEA enterprise architecture repository</image:title>
@@ -23,10 +23,14 @@
   </url>
   <url>
     <loc>https://openea.dev/try/</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-09-25</lastmod>
   </url>
   <url>
     <loc>https://openea.dev/privacy/</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-09-25</lastmod>
+  </url>
+  <url>
+    <loc>https://openea.dev/download/</loc>
+    <lastmod>2026-09-25</lastmod>
   </url>
 </urlset>
