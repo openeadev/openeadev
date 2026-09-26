@@ -328,6 +328,21 @@ p { margin-top: 0; color: var(--ink-600); }
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+
+.footer-links .footer-preference-button {
+  width: fit-content;
+  align-self: flex-start;
+  color: #8296af;
+  font-size: 13px;
+  line-height: 1.6;
+  text-align: left;
+  text-decoration: none;
+}
+.footer-links .footer-preference-button:hover,
+.footer-links .footer-preference-button:focus-visible {
+  color: #fff;
+}
+
 .footer-preference-button:hover,
 .subpage-preference-button:hover { color: #fff; }
 .subpage-footer { padding: 0 0 26px; color: var(--ink-500); font-size: 12px; text-align: center; }

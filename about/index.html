@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <title>About OpenEA | Open-Source Enterprise Architecture Project</title>
+  <meta name="description"
+    content="OpenEA is an open-source, self-hosted enterprise architecture project. Learn about OpenEA Community, the project principles, source code, documentation, demo, and official links.">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <meta name="author" content="OpenEA">
+  <link rel="canonical" href="https://openea.dev/about/">
+  <link rel="me" href="https://github.com/openeadev">
+
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="OpenEA">
+  <meta property="og:title" content="About OpenEA | Open-Source Enterprise Architecture Project">
+  <meta property="og:description"
+    content="OpenEA is an open-source, self-hosted enterprise architecture project built around repository-first, explainable architecture management.">
+  <meta property="og:url" content="https://openea.dev/about/">
+  <meta property="og:image" content="https://openea.dev/assets/img/openea-social.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="OpenEA — open-source enterprise architecture platform">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About OpenEA">
+  <meta name="twitter:description"
+    content="OpenEA is an open-source, self-hosted enterprise architecture project.">
+  <meta name="twitter:image" content="https://openea.dev/assets/img/openea-social.png">
+
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../assets/img/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png" sizes="180x180">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://openea.dev/#organization",
+        "name": "OpenEA",
+        "alternateName": "OpenEA Project",
+        "url": "https://openea.dev/",
+        "description": "OpenEA is the open-source project behind OpenEA Community, a self-hosted enterprise architecture platform.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://openea.dev/assets/img/openea-mark.svg",
+          "contentUrl": "https://openea.dev/assets/img/openea-mark.svg",
+          "caption": "OpenEA"
+        },
+        "sameAs": [
+          "https://github.com/openeadev"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://openea.dev/#website",
+        "url": "https://openea.dev/",
+        "name": "OpenEA",
+        "alternateName": "OpenEA Project",
+        "description": "Official website for the OpenEA open-source enterprise architecture project.",
+        "publisher": {
+          "@id": "https://openea.dev/#organization"
+        },
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://openea.dev/about/#webpage",
+        "url": "https://openea.dev/about/",
+        "name": "About OpenEA | Open-Source Enterprise Architecture Project",
+        "description": "About the OpenEA project, OpenEA Community, project principles, source code, documentation, and official resources.",
+        "isPartOf": {
+          "@id": "https://openea.dev/#website"
+        },
+        "about": {
+          "@id": "https://openea.dev/#organization"
+        },
+        "breadcrumb": {
+          "@id": "https://openea.dev/about/#breadcrumb"
+        },
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://openea.dev/about/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "OpenEA",
+            "item": "https://openea.dev/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "About OpenEA",
+            "item": "https://openea.dev/about/"
+          }
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://openea.dev/#software",
+        "name": "OpenEA",
+        "alternateName": "OpenEA Community",
+        "applicationCategory": "BusinessApplication",
+        "applicationSubCategory": "Enterprise Architecture Management",
+        "operatingSystem": "Linux, Docker",
+        "url": "https://openea.dev/",
+        "codeRepository": "https://github.com/openeadev/openea-community",
+        "softwareHelp": "https://docs.openea.dev/",
+        "downloadUrl": "https://github.com/openeadev/openea-community/releases",
+        "license": "https://www.gnu.org/licenses/agpl-3.0.html",
+        "publisher": {
+          "@id": "https://openea.dev/#organization"
+        },
+        "description": "OpenEA Community is the free, open-source, self-hosted edition of the OpenEA enterprise architecture platform.",
+        "offers": {
+          "@type": "Offer",
+          "name": "OpenEA Community",
+          "price": "0",
+          "priceCurrency": "USD",
+          "url": "https://openea.dev/download/"
+        },
+        "sameAs": [
+          "https://github.com/openeadev/openea-community",
+          "https://docs.openea.dev/"
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    .about-shell {
+      max-width: 1040px;
+      margin: 0 auto;
+    }
+    .about-hero {
+      padding: 5.5rem 0 2.75rem;
+      text-align: center;
+    }
+    .about-hero h1 {
+      max-width: 850px;
+      margin: 0 auto 1.25rem;
+      font-size: clamp(2.4rem, 5vw, 4.3rem);
+      line-height: 1.05;
+      letter-spacing: -.035em;
+    }
+    .about-lead {
+      max-width: 790px;
+      margin: 0 auto;
+      color: var(--muted, #64748b);
+      font-size: 1.14rem;
+      line-height: 1.75;
+    }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+      margin-bottom: 2rem;
+    }
+    .about-card {
+      padding: 2rem;
+      border: 1px solid rgba(148,163,184,.22);
+      border-radius: 18px;
+      background: #fff;
+      box-shadow: 0 18px 50px rgba(15,23,42,.05);
+    }
+    .about-card h2 {
+      margin-top: 0;
+      font-size: 1.35rem;
+    }
+    .about-card p,
+    .about-card li {
+      color: var(--muted, #64748b);
+      line-height: 1.7;
+    }
+    .about-principles {
+      margin: 2rem 0;
+      padding: 2.25rem;
+      border-radius: 20px;
+      color: #d9e8f8;
+      background: linear-gradient(135deg, #0a274a, #0b5ed7);
+    }
+    .about-principles h2 {
+      margin-top: 0;
+      color: #fff;
+    }
+    .about-principles-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 1rem;
+      margin-top: 1.4rem;
+    }
+    .about-principles-grid div {
+      padding: 1.25rem;
+      border: 1px solid rgba(255,255,255,.16);
+      border-radius: 14px;
+      background: rgba(255,255,255,.06);
+    }
+    .about-principles-grid strong,
+    .about-principles-grid span {
+      display: block;
+    }
+    .about-principles-grid strong {
+      margin-bottom: .35rem;
+      color: #fff;
+    }
+    .about-principles-grid span {
+      color: #c0d6ec;
+      font-size: .9rem;
+      line-height: 1.55;
+    }
+    .official-links {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: .9rem;
+      margin: 1.5rem 0 4rem;
+    }
+    .official-links a {
+      display: block;
+      padding: 1rem 1.1rem;
+      border: 1px solid rgba(148,163,184,.24);
+      border-radius: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      background: #fff;
+    }
+    @media (max-width: 760px) {
+      .about-grid,
+      .about-principles-grid,
+      .official-links {
+        grid-template-columns: 1fr;
+      }
+      .about-hero {
+        padding-top: 3.5rem;
+      }
+    }
+  </style>
+</head>
+<body class="subpage">
+  <header class="site-header is-scrolled">
+    <div class="container nav-wrap">
+      <a class="brand" href="../" aria-label="OpenEA home">
+        <img src="../assets/img/openea-mark.svg" width="32" height="32" alt="OpenEA">
+        <span class="brand-name">OpenEA</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <div class="container about-shell">
+      <section class="about-hero">
+        <div class="eyebrow">About OpenEA</div>
+        <h1>Open-source enterprise architecture, built around an authoritative repository.</h1>
+        <p class="about-lead">
+          OpenEA is an open-source enterprise architecture project focused on repository-first,
+          explainable, self-hosted architecture management. OpenEA Community is the free,
+          open-source edition of the platform.
+        </p>
+      </section>
+
+      <div class="about-grid">
+        <article class="about-card">
+          <h2>What is OpenEA?</h2>
+          <p>
+            OpenEA is enterprise architecture software for connecting business capabilities,
+            applications, technology, data, organizations, initiatives, ownership, lifecycle,
+            governance, and architecture decisions in one governed model.
+          </p>
+          <p>
+            The repository is the authoritative architecture model. Visualizations, impact
+            analysis, analytics, findings, portfolios, and roadmaps are derived from that
+            structured information.
+          </p>
+        </article>
+
+        <article class="about-card">
+          <h2>What is OpenEA Community?</h2>
+          <p>
+            OpenEA Community is the free and open-source edition of OpenEA. It is licensed under
+            GNU AGPLv3 and designed to run on infrastructure controlled by the organization using it.
+          </p>
+          <p>
+            The supported deployment model uses Docker Compose, Python/FastAPI, and PostgreSQL.
+            OpenEA Community can also operate offline after the required software and container
+            images have been staged.
+          </p>
+        </article>
+      </div>
+
+      <section class="about-principles">
+        <h2>OpenEA project principles</h2>
+        <div class="about-principles-grid">
+          <div>
+            <strong>Repository first</strong>
+            <span>Architecture objects and governed relationships are the durable source of truth.</span>
+          </div>
+          <div>
+            <strong>Explainable by design</strong>
+            <span>Impact, findings, risk, and analytics should show why a result exists.</span>
+          </div>
+          <div>
+            <strong>Self-hosted</strong>
+            <span>Organizations can operate the core platform and retain architecture data on infrastructure they control.</span>
+          </div>
+        </div>
+      </section>
+
+      <article class="about-card">
+        <h2>Official OpenEA resources</h2>
+        <p>
+          These are the official destinations for the OpenEA project, Community source code,
+          documentation, downloads, and public demo.
+        </p>
+        <div class="official-links">
+          <a href="https://openea.dev/">OpenEA project website — openea.dev</a>
+          <a href="https://github.com/openeadev">OpenEA organization on GitHub ↗</a>
+          <a href="https://github.com/openeadev/openea-community">OpenEA Community source ↗</a>
+          <a href="https://docs.openea.dev/">OpenEA Community documentation ↗</a>
+          <a href="../download/">Download OpenEA Community</a>
+          <a href="../try/">Try the OpenEA Community demo</a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="subpage-footer">
+    <div class="container subpage-footer__links">
+      <a href="../">OpenEA home</a>
+      <a href="../download/">Download</a>
+      <a href="../try/">Try OpenEA</a>
+      <a href="../privacy/">Privacy &amp; analytics</a>
+      <button type="button" class="subpage-preference-button" data-consent-settings>Analytics settings</button>
+    </div>
+  </footer>
+
+  <script src="../assets/js/analytics.js" defer></script>
+</body>
+</html>
